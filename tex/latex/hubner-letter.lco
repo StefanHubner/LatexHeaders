@@ -1,0 +1,32 @@
+\ProvidesFile{hubner-letter.lco}[2011/08/08 v0.1 unsupported letter-class-option]
+ 
+\LoadLetterOption{DIN}
+ 
+% Layout
+  % http://ftp.snt.utwente.nl/pub/software/tex/macros/latex/contrib/koma-script/scrguien.pdf s.183
+  
+\RequirePackage{geometry}
+\geometry{top=47mm,right=25mm,bottom=10mm,left=20mm,footskip=0mm}
+
+\@setplength{firstheadvpos}{7mm}
+\@setplength{firstheadhpos}{20mm}
+
+\@setplength{firstfootvpos}{295mm}
+
+\@setplength{toaddrvpos}{40mm}
+\@setplength{toaddrhpos}{20mm}
+\@setplength{toaddrindent}{0mm}
+
+\@setplength{backaddrheight}{10mm}
+
+\@setplength{refhpos}{-20mm}
+\@setplength{refvpos}{90mm}
+
+\@setplength{sigbeforevskip}{20mm}
+\@setplength{sigindent}{0mm}
+
+
+%\@addtoplength[-\useplength{refhpos}+\useplength{toaddrhpos}]{refhpos}
+
+ 
+\endinput

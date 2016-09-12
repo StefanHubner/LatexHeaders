@@ -1,0 +1,57 @@
+%\documentclass[a4paper,10pt,mathserif]{article} % else scrartcl normalheadings,fleqn
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{xcolor} % needed for _code
+
+\input{_packages}
+%\input{_font}
+\usepackage{fouriernc}
+
+\input{_code}
+\input{_newcommands}
+\input{_pdf}
+
+\input{_general}
+
+%\renewcommand\qedsymbol{$\blacksquare$}
+\renewcommand\qedsymbol{$\textrm{Q.E.D.}$}
+
+% paper specific includes (not for beamer)
+%\usepackage[svgnames,table]{xcolor}
+\usepackage{enumitem} 
+\usepackage{geometry}
+%\usepackage[papersize={360.00bp,252.00bp},text={360.00bp,252.00bp}]{geometry} % test for gnuplot
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{subfig}
+
+\setenumerate{label=(\roman*), itemsep=0mm, parsep=0mm}
+\setitemize{label=(\roman*), noitemsep, nolistsep}
+\sffamily
+\setcounter{secnumdepth}{3}	
+\setcounter{tocdepth}{3} 
+
+%\onehalfspacing
+
+\usepackage{titlesec}
+% \titleformat{?Überschriftenklasse?}[Absatzformatierung?]{?Textformatierung?} {?Nummerierung?}{?Abstand zwischen Nummerierung und Überschriftentext?}{?Code vor der Überschrift?}[?Code nach der Überschrift?]
+%\titlespacing*{<cmd>}{<left sep>}{<before sep>}{<after sep>}[<right sep>]
+
+%\titleformat{\section}[hang]{\Huge}{0mm}{}{}[]
+%\titleformat{\subsection}[hang]{\Large}{}{}{}[\titlerule]
+%\titlespacing{\section}{0mm}{1mm}{-0.0mm}[0mm]
+%\titlespacing{\subsection}{0mm}{+1.0mm}{-0.5mm}[0mm]
+%\titlespacing{\subsection}{0mm}{+1.0mm}{-0.2mm}[0mm]
+%\titlespacing{\subsubsection}{0mm}{0mm}{0mm}[0mm]
+
+\geometry{a4paper, top=20mm, left=25mm, right=25mm, bottom=20mm, headsep=10mm, footskip=10mm} % left/right 20mm also looks just fine
+%\geometry{a4paper, top=12mm, left=10mm, right=10mm, bottom=15mm, headsep=8mm, footskip=7mm}
+
+%\makeatletter
+%\g@addto@macro\normalsize{\setlength\abovedisplayskip{1mm}}
+%\g@addto@macro\normalsize{\setlength\belowdisplayskip{1mm}}
+%\makeatother
+
+%\setlength\belowdisplayskip{2mm}

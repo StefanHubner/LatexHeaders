@@ -1,0 +1,55 @@
+\definecolor{Black}{RGB}{0,0,0}
+
+\renewcommand\lstlistingname{Code}
+%\captionsetup[lstlisting]{position=bottom}
+
+
+\lstset{
+	language=R,
+	%numbers=left,  
+	numberstyle={\scriptsize},
+	numbersep=3mm,
+	basicstyle={\ttfamily\scriptsize},
+	keywordstyle={\color{Black}\scriptsize},
+	identifierstyle={\color{Black}},
+  	commentstyle={\itshape\color{Black}\scriptsize},
+	stringstyle={\underbar\scriptsize},
+	backgroundcolor={\color{Black!0}},
+	columns=fixed,
+	frame=lines,
+	tabsize=5,
+	framesep=1mm,
+	%escapechar={#},
+	showspaces=false,
+	showstringspaces=false,
+	xleftmargin=0mm,
+	xrightmargin=0mm,
+	rulesep=10mm,
+	morecomment=[s]{/*}{*/},
+	morestring=[b]{"},
+	morestring=[b]{'},
+	morekeywords={*,f,double,by,return,function,pnorm,matrix,rep,c,rchisq,log,exp,sum,optim,sprintf,apply,density,legend,plot,lines,savePlot,for,in,cbind,rbind,t,rnorm,runif,which,lm,ncol,nrow,max,NULL,TRUE,FALSE}
+}
+
+%
+
+%\lstset{language=C,
+%	basicstyle=\ttfamily\scriptsize,
+%	keywordstyle={\color{Black}\scriptsize},
+%	identifierstyle={\color{Black!65}},
+%  commentstyle={\color{Black!50}\scriptsize\calligra},
+%	backgroundcolor={\color{Black!5}},
+%	columns=flexible,
+%	frameround=tttt,
+%	frame=single,
+%	%rulecolor=\color{orange},
+%	framesep=2mm,
+%	emph={xtreg,predict,gen,correlate,list,reg,egen,replace,sort,foreach,of,set,xthtaylor,scalar,display,capture,program,drop,bootstrap,test,e,u,i,tempname,matrix,ereturn,if,double,by,return,function,pnorm,matrix,rep,c,rchisq,log,exp,sum,optim,sprintf,apply,density,legend,plot,lines,savePlot,for,in,cbind,rbind,t,rnorm,runif,which,lm,ncol,nrow,max,NULL,TRUE,FALSE}, emphstyle=\textbf,
+%	%escapechar={~},
+%	%numbers=left,
+%	showspaces=false,
+%	showstringspaces=false,
+%	xleftmargin=5mm,
+%	xrightmargin=5mm,
+%	rulesep=10mm
+%}

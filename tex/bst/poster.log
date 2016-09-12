@@ -1,0 +1,75 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.25)  10 JUL 2016 16:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**poster
+(/usr/share/texlive/texmf-dist/tex/generic/poster-mac/poster.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
+  v1.1  10/05/15  <tvz>
+\@posterbox=\box26
+\poster@savedbox=\box27
+\poster@cropbox=\box28
+)
+*X
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> X
+     
+? 
+Missing character: There is no X in font nullfont!
+
+*
+
+Overfull \hbox (20.0pt too wide) detected at line 0
+[] 
+ []
+
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*sdf
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> s
+     df
+? X
+ 
+Here is how much of TeX's memory you used:
+ 67 strings out of 493304
+ 1205 string characters out of 6139871
+ 51880 words of memory out of 5000000
+ 3624 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 5i,0n,8p,86b,14s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
+PDF statistics:
+ 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

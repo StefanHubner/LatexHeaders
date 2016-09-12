@@ -1,0 +1,125 @@
+\documentclass[11pt,professionalfont,xcolor=dvipsnames]{beamer} % mathserif
+
+\input{_beamer}
+
+%\logo{\includegraphics[width=2cm]{/home/hubner/Dropbox/MyDocuments/LaTeX_Includes/uvt_logo.pdf}} 
+
+\usetheme[hideothersubsections,width=0.0\textwidth]{Hannover} %hideallsubsections as option, other alternatives: Boadilla, PaloAlto, Hannover
+\usecolortheme{structure} %firebrick, SteelBlue, LightSteelBlue
+\useinnertheme{rectangles}
+%\useoutertheme{infolines}
+
+%\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}[default]
+\setbeamertemplate{frametitle}[default][left]
+
+%\beamertemplatesolidbackgroundcolor{White}
+
+%\input{beamer_blocks_plain}
+\setbeamertemplate{blocks}[framed]
+
+\setbeamertemplate{footline}{
+% taken from theme infolines and adapted
+  \leavevmode%
+    %\rule{\textwidth}{0.5pt}
+  \hbox{%
+  \begin{beamercolorbox}[wd=.45\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+  \hspace{1.5ex} \insertshortinstitute % alternatively, in between: \insertshortauthor \hspace{.75ex} -- \hspace{.75ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+  \hspace{1.5ex}\insertsection% \insertshortinstitute % alternatively, in between: \insertshortauthor \hspace{.75ex} -- \hspace{.75ex}
+  \end{beamercolorbox}%
+	 \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,left=1em]{frametitle}%
+  \hspace{2ex}\insertshortdate
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,right]{frametitle}%
+	Page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\iffalse
+\setbeamertemplate{sidebar left}
+{
+ {\usebeamerfont{title in sidebar}%
+ %\vskip1.5em%
+ %\hskip3pt%
+ \usebeamercolor[fg]{title in sidebar}%
+ %\insertshorttitle[width=2cm-6pt,center,respectlinebreaks]\par%
+ %\vskip1.25em%
+ }%
+ {%
+ %\hskip3pt%
+ \usebeamercolor[fg]{author in sidebar}%
+ \usebeamerfont{author in sidebar}%
+ %\insertshortauthor[width=2cm-2pt,center,respectlinebreaks]\par%
+ %\vskip1.25em%
+ }%
+ \hbox to 2cm{\hss\insertlogo\hss}
+ \vskip3.25em
+ \hskip1.15em
+ \insertverticalnavigation{2cm}%
+ \vfill
+ \hbox to 2cm{\hfill\usebeamerfont{subsection in sidebar}\strut\usebeamercolor[fg]{subsection in sidebar}}%
+ \vskip3pt%
+}%
+\fi
+
+\setbeamertemplate{title page}
+{
+ \vbox{}
+ \vskip1em
+ %{\Large \hfill TILBURG UNIVERSITY\par}
+ {\vskip1em \usebeamercolor[fg]{title}\usebeamerfont{title}\inserttitle\par}%
+ \ifx\insertsubtitle\@empty%
+ \else%
+ \vskip1em%
+% {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+ \fi%
+ \vskip0em\par
+ Presentation\ as of \insertdate\par
+ \vskip0pt plus1filll
+ \leftskip=0pt plus1fill\insertauthor\par
+ \insertinstitute\vskip1em
+} 
+
+\setbeamercolor{structure}{bg=White, fg=Black}
+
+%\setbeamercolor{alerted text}{fg=orange}
+%\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{block body}{bg=White}
+\setbeamerfont{block title}{series=\bfseries}
+%\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+%\setbeamercolor{block title}{bg=blue}
+%\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+\setbeamercolor{fine separation line}{fg=Black!50}
+\setbeamercolor{frametitle}{fg=Black,bg=White}
+\setbeamerfont{frametitle}{series=\bfseries}
+%\setbeamercolor{item projected}{fg=black}
+%\setbeamercolor{normal text}{bg=black,fg=yellow}
+%\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+%\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
+%\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
+%\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{section in sidebar}{fg=Black}
+\setbeamercolor{section in sidebar shaded}{fg=Black}
+\setbeamercolor{separation line}{fg=Black!50}
+\setbeamercolor{sidebar}{bg=White,fg=Black}
+\setbeamercolor{subsection in sidebar}{fg=Black}
+\setbeamercolor{subsection in sidebar shaded}{fg=Black!50}
+
+\setbeamercolor{title}{fg=black}
+\setbeamerfont{title}{series=\bfseries}
+\setbeamercolor{titlelike}{fg=black}
+\setbeamerfont{titlelike}{series=\bfseries}
+
+%\setbeamercolor{author in sidebar}{fg=white}
+
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}} 
+}

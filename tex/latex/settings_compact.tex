@@ -1,0 +1,50 @@
+\documentclass[a4paper, 10pt]{article}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{listings}
+
+\usepackage[svgnames,table]{xcolor}
+%\definecolor{gelb}{rgb}{1,1,0.8}
+%\definecolor{orange}{rgb}{1,0.6,0}
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black,%
+pdftex}
+
+\usepackage{geometry}
+\geometry{a4paper, top=0mm, left=10mm, right=10mm, bottom=10mm, headsep=10mm, footskip=0mm}
+
+\onehalfspacing
+
+\lstset{language=C,
+	basicstyle=\ttfamily\small,
+	keywordstyle={\color{Black}\scriptsize},
+	identifierstyle={\color{Black!65}},
+  commentstyle={\color{Black!50}\scriptsize\calligra},
+	backgroundcolor={\color{Black!5}},
+	columns=flexible,
+	frameround=tttt,
+	frame=single,
+	%rulecolor=\color{orange},
+	framesep=2mm,
+	emph={xtreg,predict,gen,correlate,list,reg,egen,replace,sort,foreach,of,set,xthtaylor,scalar,display,capture,program,drop,bootstrap,test,e,u,i,tempname,matrix,ereturn,if,double,by}, emphstyle=\textbf,
+	%escapechar={~},
+	%numbers=left,
+	showspaces=false,
+	showstringspaces=false,
+	xleftmargin=10mm,
+	xrightmargin=0mm,
+	rulesep=10mm
+}
+
+\newtheorem{proposition}{Proposition}

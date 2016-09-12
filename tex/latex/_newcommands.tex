@@ -1,0 +1,76 @@
+% GENERAL NON-MATH
+\newcommand{\titlesubtitle}[2]{\title{\huge \textbf{#1} \\ \Large #2}}
+
+% Sweave-Options
+\setkeys{Gin}{width=1\textwidth}
+%\ifthenelse{\boolean{Sweave@gin}}{\setkeys{Gin}{width=0.6\textwidth}}{}
+
+% DIRECT OUTPUT
+%\DefineVerbatimEnvironment{sout}{Verbatim}{fontsize=\scriptsize, xleftmargin=0mm, fontshape=n} % manual use
+%\DefineVerbatimEnvironment{Sinput}{Verbatim}{fontsize=\small, fontshape=n} % Sweave
+%\DefineVerbatimEnvironment{Soutput}{Verbatim}{fontsize=\small, fontshape=n}
+%\DefineVerbatimEnvironment{Scode}{Verbatim}{fontsize=\small, fontshape=n}
+
+% THEOREMS
+% now in extra file 
+
+\let\oldappendix\appendix\renewcommand{\appendix}{\oldappendix \renewcommand{\thesection}{A.\arabic{section}}}
+
+%\renewcommand{\qedsymbol}{\blacksquare}
+
+% CALCULUS / ANALYSIS
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}} 
+\newcommand{\pdinline}[2]{\partial #1/\partial #2} 
+\newcommand{\pdsq}[2]{\frac{\partial^2 #1}{\partial #2^2}} 
+\newcommand{\seq}[1]{\left\{\m{#1}_t\right\}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+%\renewcommand{\setminus}[1]{\backslash \left\{ #1 \right\}}
+
+% MATRIX ALGEBRA
+\newcommand{\m}[1]{\boldsymbol{#1}}
+\newcommand{\mt}[1]{\boldsymbol{#1}^{T}}
+\renewcommand{\v}[1]{\boldsymbol{#1}}
+\newcommand{\vt}[1]{\boldsymbol{#1}^{T}}
+\newcommand{\mi}[1]{\boldsymbol{#1}^{-1}}
+\newcommand{\kronecker}{\raisebox{1pt}{\ensuremath{\:\otimes\:}}} 
+\newcommand{\tr}[1]{\text{tr}\left(#1\right)}
+\newcommand{\rk}[1]{\text{rk}\left(#1\right)}
+\newcommand{\vech}[1]{\text{vech}\left(#1\right)}
+\renewcommand{\vec}[1]{\text{vec}\left(#1\right)}
+
+% STATISTICS FUNCTIONS
+\newcommand{\var}[1]{\text{Var}\left[#1\right]}
+\newcommand{\cov}[2]{\text{Cov}\left[#1,#2\right]}
+\newcommand{\ex}[1]{\mathbb{E}\left[#1\right]}
+\newcommand{\ext}[1]{\mathbb{E}\left[\left. #1 \right| \mathcal{F}_{t-1}\right]}
+\newcommand{\eex}[3]{\int_{#3} #1 d#2} % x, measure, space
+\newcommand{\prob}[1]{\mathbb{P}\left[#1\right]}
+\newcommand{\pn}[1]{\mathbb{P}_n\left[#1\right]}
+\newcommand{\normal}[2]{\mathcal{N}\left(#1, #2\right)}
+\newcommand{\Op}[1]{\mathcal{O}_p\left(#1\right)}
+\newcommand{\op}[1]{o_p\left(#1\right)}
+
+
+% ECONOMETRICS
+\newcommand{\xb}{\mt{x}_i\m{\beta}}
+
+% PROBABILITY MASS FUNCTIONS / CUMULATIVE DISTRIBUTION FUNCTIONS
+\newcommand{\pmfnormal}[1]{\frac{1}{\sqrt{2\pi}} \exp\left(-\frac{1}{2} #1 \right)}
+\newcommand{\cdflogistic}[1]{\left(1+\exp\left(-#1\right)\right)^{-1}}
+\newcommand{\cdfgumbel}[1]{\exp\left(-\exp\left(-#1\right)\right)}
+
+% MISC
+\usepackage{amsopn}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\newcommand{\idxt}{\mathcal{I}_T}
+\newcommand{\idxn}{\mathcal{I}_N}
+\newcommand{\as}{\hspace{2.5ex}\textrm{a.s.}}
+\newcommand{\indicator}{\mathbbm{1}}
+\newcommand{\INDICATOR}{\text{\Large \raisebox{-1pt}{\ensuremath{\mathbbm{1}}}}}
+\newcommand{\defeq}{\mathrel{\mathop:}=}
+\newcommand{\sgn}{\text{sgn}}
+
+\renewcommand{\bullet}{\raisebox{0.4ex}{\ensuremath{\centerdot}}} 
+
+	

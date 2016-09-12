@@ -1,0 +1,46 @@
+\documentclass[a4paper, 10pt, landscape]{article}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{listings}
+
+\usepackage[svgnames,table]{xcolor}
+%\definecolor{gelb}{rgb}{1,1,0.8}
+%\definecolor{orange}{rgb}{1,0.6,0}
+
+\lstset{language=VBScript,
+	basicstyle=\ttfamily\scriptsize,
+	keywordstyle={\color{Black}\scriptsize},
+	identifierstyle={\color{Black!65}},
+  commentstyle={\color{Black!50}\scriptsize\calligra},
+	%backgroundcolor={\color{gelb}},
+	columns=flexible,
+	frameround=tttt,
+	frame=single,
+	%rulecolor=\color{orange},
+	framesep=2mm,
+	emph={group,equation,if,else,endif,next,series,smpl}, emphstyle=\textbf,
+	escapechar={~},
+	%numbers=left,
+	xleftmargin=10mm,
+	xrightmargin=10mm,
+}
+
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=black,%
+pdftex}
+
+\usepackage{geometry}
+\geometry{a4paper, top=0mm, left=10mm, right=10mm, bottom=10mm, headsep=10mm, footskip=0mm}
+
+\newtheorem{proposition}{Proposition}

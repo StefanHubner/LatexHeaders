@@ -1,0 +1,36 @@
+\documentclass[a4paper,10pt,mathserif,twocolumn]{article} % else scrartcl normalheadings,fleqn
+
+\usepackage{xcolor} % needed for _code
+
+\input{_packages}
+\input{_font}
+\input{_code}
+\input{_newcommands}
+\input{_pdf}
+
+\input{_general}
+
+% paper specific includes (not for beamer)
+%\usepackage[svgnames,table]{xcolor}
+\usepackage{enumitem} 
+\usepackage{geometry}
+%\usepackage[papersize={360.00bp,252.00bp},text={360.00bp,252.00bp}]{geometry} % test for gnuplot
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\setenumerate{label=(\roman*), itemsep=0mm, parsep=0mm}
+\setitemize{label=(\roman*), noitemsep, nolistsep}
+\sffamily
+\setcounter{secnumdepth}{3}	
+\setcounter{tocdepth}{3} 
+
+\usepackage{titlesec}
+\titlespacing{\section}{0mm}{1mm}{-0.5mm}[0mm]
+\titlespacing{\subsection}{0mm}{-0.0mm}{-0.0mm}[0mm]
+\titlespacing{\subsubsection}{0mm}{0mm}{0mm}[0mm]
+
+%\onehalfspacing
+
+\geometry{a4paper, top=15mm, left=8mm, right=8mm, bottom=20mm, headsep=10mm, footskip=10mm} % left/right 20mm also looks just fine

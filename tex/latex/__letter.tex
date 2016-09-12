@@ -1,0 +1,41 @@
+\documentclass[a4paper,refline=narrow,fromphone=false,fromemail=true,foldmarks=TBmpl,fontsize=12pt,parskip=full]{scrlttr2}
+
+\input{_font}
+\usepackage{url}
+  
+\usepackage[T1]{fontenc}  
+\usepackage{marvosym}       % Fuer Telefon-, Handy- und Briefsymbol
+
+\setkomavar{firsthead}{
+\noindent
+  \parbox[b]{\useplength{firstheadwidth}}{
+  \noindent%
+  \raggedleft%
+  {\bfseries\large\usekomavar{fromname}}\\%
+  \vspace{-0.25\baselineskip}
+  \rule{\useplength{firstheadwidth}}{0.5pt}\\%
+  \usekomavar{fromaddress}\\%
+  \Telefon\enskip\usekomavar{fromphone}\\%
+  \Email\enskip\usekomavar{fromemail} } }
+
+\setkomavar{fromname}{Stefan Hubner}
+%\setkomavar{fromaddress}{Tilburg University\\ Warandelaan 2\\ 5037 AB Tilburg, NL}
+\setkomavar{fromaddress}{Kruisplein 424\\ 3012 CC, Rotterdam\\The Netherlands}
+\setkomavar{fromphone}{+31 (614) 969 337}
+\setkomavar{fromemail}{stefan@hubner.info}
+
+\setkomavar{date}{Tilburg, \today}
+
+%\usepackage[ngerman]{babel}
+%\usepackage[english]{babel}
+%\setkomavar*{enclseparator}{Anhang\\}
+
+\LoadLetterOption{hubner-letter}
+
+%\geometry{a4paper, top=25mm, left=20mm, right=25mm, bottom=20mm, headsep=20mm, footskip=10mm} 
+
+\setlength{\parindent}{0pt}
+
+\makeatletter
+\renewcommand*{\raggedsignature}{\raggedright}
+
