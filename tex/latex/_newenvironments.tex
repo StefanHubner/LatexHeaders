@@ -1,0 +1,35 @@
+\newif\ifpaperabstract
+\usepackage{xparse}
+\DeclareDocumentEnvironment{myabstract}{m m}{
+\par
+\begingroup
+\small
+\itshape
+\ifpaperabstract
+\leftskip2em
+\begin{onehalfspacing}
+\else
+\leftskip0em
+\begin{singlespacing}
+\fi
+\rightskip\leftskip
+\ifpaperabstract
+\noindent \textbf{Abstract}
+\fi
+}
+{
+\ifpaperabstract
+\\
+\\
+\noindent \textbf{JEL Codes:} #1 \\
+\noindent \textbf{Keywords:} #2
+\fi
+\par
+\normalsize
+\ifpaperabstract
+\end{onehalfspacing}
+\else
+\end{singlespacing}
+\fi
+\endgroup
+}
