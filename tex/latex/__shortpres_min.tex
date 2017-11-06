@@ -1,4 +1,4 @@
-\documentclass[11pt,professionalfont,xcolor=dvipsnames]{beamer} % mathserif
+%\documentclass[10pt,professionalfonts,xcolor=dvipsnames]{beamer} % mathserif
 
 \input{_beamer}
 
@@ -87,7 +87,19 @@
 %\setbeamercolor{alerted text}{fg=orange}
 %\setbeamercolor{background canvas}{bg=white}
 \setbeamercolor{block body}{bg=White}
-\setbeamerfont{block title}{series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries, size=\normalsize}
+\setbeamertemplate{block begin}{%
+  \vspace*{1ex}
+    \begin{beamercolorbox}[ ht=1.4ex, dp=1ex]{block title}
+    \usebeamerfont*{block title}\insertblocktitle%
+    \end{beamercolorbox}%
+  \vspace*{-0.3em}
+    \usebeamerfont{block body}%
+    \begin{beamercolorbox}[dp=1ex, vmode]{block body} }
+    \setbeamertemplate{block end}{
+    \end{beamercolorbox}
+  \vspace*{0.2ex}
+													  }
 %\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!black}
 %\setbeamercolor{block title}{bg=blue}
 %\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!black}

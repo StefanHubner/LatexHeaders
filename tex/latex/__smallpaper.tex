@@ -37,16 +37,19 @@
 
 \onehalfspacing
 
+\iffalse
 \usepackage{titlesec}
 % \titleformat{?Überschriftenklasse?}[Absatzformatierung?]{?Textformatierung?} {?Nummerierung?}{?Abstand zwischen Nummerierung und Überschriftentext?}{?Code vor der Überschrift?}[?Code nach der Überschrift?]
 %\titlespacing*{<cmd>}{<left sep>}{<before sep>}{<after sep>}[<right sep>]
 
-%\titleformat{\section}[hang]{\Huge}{0mm}{}{}[]
+\titleformat{\section}[hang]{\large\bf}{\thesection}{3em}{}[]
 %\titleformat{\subsection}[hang]{\Large}{}{}{}[\titlerule]
-\titlespacing{\section}{0mm}{1mm}{-0.0mm}[0mm]
 %\titlespacing{\subsection}{0mm}{+1.0mm}{-0.5mm}[0mm]
+
+\titlespacing{\section}{0mm}{1mm}{-0.0mm}[0mm]
 \titlespacing{\subsection}{0mm}{+1.0mm}{-0.2mm}[0mm]
 \titlespacing{\subsubsection}{0mm}{0mm}{0mm}[0mm]
+\fi
 
 \geometry{a4paper, top=20mm, left=20mm, right=20mm, bottom=20mm, headsep=10mm, footskip=10mm} % left/right 20mm also looks just fine
 %\geometry{a4paper, top=12mm, left=10mm, right=10mm, bottom=15mm, headsep=8mm, footskip=7mm}
