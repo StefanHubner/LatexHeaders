@@ -1,0 +1,27 @@
+\input{_font}
+\input{_bibstyle}
+\input{_coolabstract}
+
+\usepackage[max6]{authblk}
+\renewcommand\Affilfont{\itshape\small} % package abstract
+\usepackage{amsthm} % defined in ectj class
+
+\usepackage{geometry}
+\geometry{a4paper, top=1.25in, left=1.25in, right=1.25in, bottom=1.25in, headsep=10mm, footskip=10mm}
+
+\makeatletter
+\g@addto@macro\normalsize{\setlength\abovedisplayskip{1mm}}
+\g@addto@macro\normalsize{\setlength\belowdisplayskip{1mm}}
+\makeatother
+
+\setlength\belowdisplayskip{2mm}
+
+\setenumerate{label=(\roman*), itemsep=0mm, parsep=0mm}
+\setitemize{label=(\roman*), noitemsep, nolistsep}
+\sffamily
+\setcounter{secnumdepth}{3}	
+\setcounter{tocdepth}{3} 
+
+\setlength{\parskip}{.25em}
+
+\interfootnotelinepenalty=100000

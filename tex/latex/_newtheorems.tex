@@ -1,16 +1,21 @@
-\theoremstyle{definition}
 \newtheorem{pro}{Proposition}%[section]
-\newtheorem*{pro*}{Proposition}%[section]
 \newtheorem{dfn}{Definition}%[section]
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[section]
 \newtheorem{cor}{Corollary}%[section]
 \newtheorem{con}{Conjecture}%[section]
-\newtheorem{ass}{Assumption}%[chapter]
+\newtheorem{ass}{Assumption}%[section]
 \newtheorem{axm}{Axiom}%[section]
 \newtheorem{rem}{Remark}%[section]
 \newtheorem{exa}{Example}%[section]
-\newtheorem*{exa*}{Example}%[section]
+
+
+\newtheorem*{rem*}{Remark}%[section]
 
 \usepackage{float}
 \newfloat{Algorithm}{H}{alg}[section]
+
+\newcounter{program}
+\newenvironment{program}{\refstepcounter{program}\align}{\tag{P.\theprogram}\endalign}
+\newcounter{foc}
+\newenvironment{foc}{\refstepcounter{foc}\align}{\tag{R.\thefoc}\endalign}

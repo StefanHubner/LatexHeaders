@@ -1,0 +1,125 @@
+\usetheme[hideothersubsections,width=0.0\textwidth]{Hannover} %hideallsubsections as option, other alternatives: Boadilla, PaloAlto, Hannover
+\usecolortheme{structure} %firebrick, SteelBlue, LightSteelBlue
+\useinnertheme{rectangles}
+%\useoutertheme{infolines}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{headline}[default]
+\setbeamertemplate{frametitle}[default][left]
+\setbeamertemplate{section in toc}[circle]
+
+%\beamertemplatesolidbackgroundcolor{White}
+
+%\input{beamer_blocks_plain}
+\setbeamertemplate{blocks}[framed]
+
+\setbeamertemplate{footline}{
+
+
+% taken from theme infolines and adapted
+  \leavevmode%
+    %\rule{\textwidth}{0.5pt}
+  \hbox{%
+  \iffalse
+      \insertsectionnavigationhorizontal
+      {.6\paperwidth}
+    {
+          \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+            \hspace{1.5ex} \insertshortauthor \hspace{0.15ex} (\insertshortinstitute)
+         \end{beamercolorbox}
+    }
+    {
+          \begin{beamercolorbox}[wd=.4\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+            \hfill Page \insertframenumber{}
+         \end{beamercolorbox}
+    }
+    \fi
+  \begin{beamercolorbox}[wd=.24\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+  \hspace{1.5ex} \insertshortauthor \hspace{0.15ex} (\insertshortinstitute) % alternatively, in between: \insertshortauthor \hspace{.75ex} -- \hspace{.75ex}
+  \end{beamercolorbox}
+
+  \insertsectionnavigationhorizontal{.58\paperwidth}{}{}
+  %\begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left=1em]{block title}%
+  %\hspace{1.5ex}\insertsection% \insertshortinstitute % alternatively, in between: \insertshortauthor \hspace{.75ex} -- \hspace{.75ex}
+  %\end{beamercolorbox}%
+  %\begin{beamercolorbox}[wd=.15\paperwidth,ht=2.25ex,dp=1ex,left=1em]{frametitle}%
+  %\hspace{2ex}\insertshortdate
+  %\end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.18\paperwidth,ht=2.25ex,dp=1ex,right]{frametitle}%
+    %Page \insertframenumber{} of \inserttotalframenumber \hspace*{2ex}
+    Page \insertframenumber{} \hspace*{2ex} \hspace{1.5ex}
+  \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+
+\setbeamercolor{structure}{bg=, fg=Black}
+
+%\setbeamercolor{alerted text}{fg=orange}
+%\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{block body}{bg=}
+\setbeamercolor{block title}{bg=}
+\setbeamerfont{block title}{series=\bfseries, size=\normalsize}
+\setbeamertemplate{block begin}{%
+  \vspace*{1ex}
+    \begin{beamercolorbox}[ ht=1.4ex, dp=1ex]{block title}
+    \usebeamerfont*{block title}\insertblocktitle%
+    \end{beamercolorbox}%
+  \vspace*{0.3ex}
+    \usebeamerfont{block body}%
+    \begin{beamercolorbox}[dp=1ex, vmode]{block body} }
+\setbeamertemplate{block end}{
+    \end{beamercolorbox} \vspace*{0.2ex}
+}
+
+%\setbeamercolor{block title alerted}{use={normal text,alerted text},fg=alerted text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+%\setbeamercolor{block title}{bg=blue}
+%\setbeamercolor{block title example}{use={normal text,example text},fg=example text.fg!75!normal text.fg,bg=normal text.bg!75!black}
+\setbeamercolor{fine separation line}{fg=Black!50}
+\setbeamercolor{frametitle}{fg=Black,bg=}
+\setbeamerfont{frametitle}{series=\bfseries}
+%\setbeamercolor{item projected}{fg=black}
+%\setbeamercolor{normal text}{bg=black,fg=yellow}
+%\setbeamercolor{palette sidebar primary}{use=normal text,fg=normal text.fg}
+%\setbeamercolor{palette sidebar quaternary}{use=structure,fg=structure.fg}
+%\setbeamercolor{palette sidebar secondary}{use=structure,fg=structure.fg}
+%\setbeamercolor{palette sidebar tertiary}{use=normal text,fg=normal text.fg}
+\setbeamercolor{section in sidebar}{fg=Black}
+\setbeamercolor{section in sidebar shaded}{fg=Black}
+\setbeamercolor{separation line}{fg=Black!50}
+\setbeamercolor{sidebar}{bg=,fg=Black}
+\setbeamercolor{subsection in sidebar}{fg=Black}
+\setbeamercolor{subsection in sidebar shaded}{fg=Black!50}
+
+\setbeamercolor{title}{fg=black}
+\setbeamerfont{title}{size=\Large,series=\bfseries}
+\setbeamerfont{subtitle}{size=\large,series=\bfseries}
+\setbeamerfont{author}{size=\normalsize}
+\setbeamerfont{institute}{size=\normalsize}
+\setbeamercolor{titlelike}{fg=black}
+\setbeamerfont{titlelike}{series=\bfseries}
+
+\newcommand{\backupbegin}{
+   \newcounter{framenumberappendix}
+   \setcounter{framenumberappendix}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \addtocounter{framenumberappendix}{-\value{framenumber}}
+   \addtocounter{framenumber}{\value{framenumberappendix}}
+}
+
+\newlength{\centertitlelength}
+\makeatletter
+\setlength{\centertitlelength}{0.00\textwidth} % sidebar is 0.15 -> 0.075
+\makeatother
+
+\newcommand{\sectionhead}[2][defaultlabel]{
+\begin{frame}\label{#1}
+  \vfill
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+	    \usebeamerfont{title}#2\par%
+  \end{beamercolorbox}
+  \vfill
+ \end{frame} 
+ } 

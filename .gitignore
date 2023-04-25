@@ -1,0 +1,17 @@
+*.log
+doc/
+fonts/
+source/
+tex/latex/classico/
+tex/latex/dayroman/
+tex/latex/gandhi/
+tex/latex/garamondx/
+tex/latex/literaturnaya/
+tex/latex/luxi/
+tex/latex/q.log
+tex/latex/texput.log
+tex/latex/ua1/
+tex/latex/ugm/
+tex/latex/ulg/
+tex/latex/vntex/
+tex/latex/webomints/

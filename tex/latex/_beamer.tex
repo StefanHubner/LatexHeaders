@@ -3,32 +3,19 @@
 \usepackage{graphicx}
 \usepackage{makeidx} % propositions etc
 \usepackage{listings}
-%\usepackage{Sweave}		
-%\usepackage[captionskip=0pt,nearskip=-5pt,farskip=-20pt]{subfig} % different spacing settings for beamer
-%\usepackage{subfigure} % different spacing settings for beamer
-%\usepackage[all]{xy}	% trees
 \usepackage{textcomp}	% symbols
 \usepackage{bbm}			% symbols (indicator?)
 \usepackage{url}			% urls: \url{asdf}
 \usepackage{booktabs} % for nice tables (used)
-%\usepackage{wrapfig} % text around figures
 
-
-\usefonttheme{serif}
-
-\input{_packages}
-\input{_code}
-\input{_newcommands}
-%\input{_pdf} % hyperref etc doesnt work
-
-\input{_general}
+\usefonttheme{default}
 
 \setbeamertemplate{theorems}[numbered]
 \setbeamertemplate{caption}[numbered] 
 
 \def\newblock{} % for beamer bibliography to work
 
-\institute{University of Oxford}
+\institute[Bristol]{University of Bristol}
 %\institute{University of Oxford: Department of Economics, Nuffield College}
 
 \newlength{\enumindent}\setlength{\enumindent}{0mm}
@@ -36,18 +23,32 @@
 % font
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{iwona}
+
+% 1)
+%\usepackage{iwona}
 %\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
-\usepackage[small,euler-digits,icomma,OT1,T1]{eulervm}
-\usepackage{mathrsfs,lettrine} % <-------------
-\let\Vec=\mathbold    % <---------
-\renewcommand{\mathbf}{\boldsymbol}
-\renewcommand{\mathrm}{\symbol}
+%\usepackage[small,euler-digits,icomma,OT1,T1]{eulervm}
 
+% 2)
+%\usepackage{mathrsfs,lettrine} % <-------------
+%\let\Vec=\mathbold    % <---------
+%\renewcommand{\mathbf}{\boldsymbol}
+%\renewcommand{\mathrm}{\symbol}
 
-\newlength{\centertitlelength}
-\makeatletter
-\setlength{\centertitlelength}{0.075\textwidth} % sidebar is 0.15
-\makeatother
+% 3) (alternatively use garamondx for both)
+%\usepackage{garamondx}
+%\usepackage[smallerops,cmbraces,garamondx,vvarbb]{newtxmath}
 
+% 4)
+%\usepackage{sansmathfonts}
+%\renewcommand*\sfdefault{lcmss}
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+%\usepackage[T1]{fontenc}
+%\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+% 5)
+%\usepackage{lxfonts}
+
+% 6)
+\usepackage[cmbrightmath,scaleupmath]{tpslifonts}
 

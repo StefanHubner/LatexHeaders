@@ -1,6 +1,12 @@
 % GENERAL NON-MATH
 \newcommand{\titlesubtitle}[2]{\title{\huge \textbf{#1} \\ \Large #2}}
 
+\usepackage{ragged2e} % for justify
+\newcommand{\floatnote}[1]{\vspace{.5\baselineskip}\begin{justify}\footnotesize \textbf{Note:} #1\end{justify}} 
+
+\newcommand\independent{\protect\mathpalette{\protect\independenT}{\perp}}
+\def\independenT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
 % Sweave-Options
 \setkeys{Gin}{width=1\textwidth}
 %\ifthenelse{\boolean{Sweave@gin}}{\setkeys{Gin}{width=0.6\textwidth}}{}
@@ -49,6 +55,7 @@
 \newcommand{\normal}[2]{\mathcal{N}\left(#1, #2\right)}
 \newcommand{\Op}[1]{\mathcal{O}_p\left(#1\right)}
 \newcommand{\op}[1]{o_p\left(#1\right)}
+\renewcommand{\det}[1]{\text{det}(#1)}
 
 
 % ECONOMETRICS
